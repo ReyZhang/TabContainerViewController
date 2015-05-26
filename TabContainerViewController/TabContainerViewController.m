@@ -228,8 +228,7 @@
     __block NSUInteger index = [self.tabs indexOfObject:tabView];
     
     if (self.activeTabIndex != index) {
-        [self selectTabAtIndex:index
-                      didSwipe:NO];
+        [self selectTabAtIndex:index]; //////tab改变的同时，也同时改变内容
     }
 }
 
@@ -251,8 +250,9 @@
 
 }
 
+///////处理tab选中时的处理，didSwipe如果为真，表示内容跟着变化。
 -(void)selectTabAtIndex:(NSUInteger)index {
-    [self selectTabAtIndex:index didSwipe:NO];
+    [self selectTabAtIndex:index didSwipe:YES];
 }
 
 -(void)selectTabAtIndex:(NSUInteger)index didSwipe:(BOOL)didSwipe {
@@ -264,7 +264,8 @@
     
     /////将当前位置的索引设置为活动索引
     self.activeTabIndex = index;      //////自定义了setter方法去处理tab的切换逻辑
-    self.activeContentIndex = index;
+    if (didSwipe)
+        self.activeContentIndex = index;
     
     // Inform delegate about the change
     if ([self.delegate respondsToSelector:@selector(tabContainer:didChangeTabToIndex:)]) {
@@ -671,7 +672,7 @@
     UIViewController *viewController = self.pageViewController.viewControllers[0];
     // Select tab
     NSUInteger index = [self indexForViewController:viewController];
-    [self selectTabAtIndex:index didSwipe:YES];
+    [self selectTabAtIndex:index didSwipe:NO];
 }
 
 @end

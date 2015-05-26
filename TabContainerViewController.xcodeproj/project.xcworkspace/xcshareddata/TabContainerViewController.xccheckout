@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3286252E-0460-470C-89D7-4B94B82551B3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TabContainerViewController</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>94A3054945A66F8A6D1519255F395FBC97823A15</key>
+		<string>https://github.com/ReyZhang/TabContainerViewController.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TabContainerViewController.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>94A3054945A66F8A6D1519255F395FBC97823A15</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ReyZhang/TabContainerViewController.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>94A3054945A66F8A6D1519255F395FBC97823A15</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>94A3054945A66F8A6D1519255F395FBC97823A15</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TabContainerViewController</string>
+		</dict>
+	</array>
+</dict>
+</plist>
